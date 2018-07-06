@@ -5,7 +5,7 @@
 2. 拷贝musicfile.wav至assets目录
 
 ## 接口文档
-###### 1. 启动声波配网(AINetSoundConfig)
+1. 启动声波配网(AINetSoundConfig)
 ```
     /*
      * @param ssid           Wi-Fi id
@@ -15,11 +15,11 @@
      */
     startEncodeAndPlayAudio(String ssid, String password, String userId, String token)
 ```
-###### 2. 结束声波配网(AINetSoundConfig)
+2. 结束声波配网(AINetSoundConfig)
 ```
     stopPlayAudio()
 ```
-###### 3. 启动smartconfig配网(AINetSmartConfig)
+3. 启动smartconfig配网(AINetSmartConfig)
 ```
     /*
      * @param ssid           Wi-Fi id
@@ -29,7 +29,7 @@
      */
     startProvision(String ssid, String password, String userId, String token)
 ```
-###### 4. 结束smartconfig配网(AINetSmartConfig)
+4. 结束smartconfig配网(AINetSmartConfig)
 ```
     /*
      * @param ssid           Wi-Fi id
@@ -39,3 +39,8 @@
      */
     stopProvision（）
 ```
+
+## 调用方式
+1. 同步调用
+2. 建议同时进行声波与smartconfig配网，以提高配网成功率
+3. 通过TOP/MTOP接口轮询得到配网结果后，结束配网
