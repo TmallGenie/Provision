@@ -33,7 +33,7 @@ cocoapods: pod 'CocoaAsyncSocket', '~> 7.4.3'
 ```
 3. 是否处于配网状态中(ALGLinkSmartConfig & ALGLinkSoundConfig)
 ```
-	/*
+    /*
      * @return YES or NO
      */
     - (BOOL)isLinking;
@@ -45,14 +45,14 @@ cocoapods: pod 'CocoaAsyncSocket', '~> 7.4.3'
 2. 建议同时进行声波与smartconfig配网，以提高配网成功率
 3. 通过TOP/MTOP接口轮询得到配网结果后，结束配网
 ```
-	#import <ALGLinkSDK/ALGLinkSDK.h>
-	....
-	// Wi-Fi配网
-	[[ALGLinkSmartConfig sharedInstance] linkWithSSID:@"123" password:@"123" userId:@"123" token:@"123" callback:nil];
-	// 声波配网
-	[[ALGLinkSoundConfig sharedInstance] linkWithSSID:@"123" password:@"123" userId:@"123" token:@"123" callback:nil];
+    #import <ALGLinkSDK/ALGLinkSDK.h>
+    ....
+    // Wi-Fi配网
+    [[ALGLinkSmartConfig sharedInstance] linkWithSSID:@"123" password:@"123" userId:@"123" token:@"123" callback:nil];
+    // 声波配网
+    [[ALGLinkSoundConfig sharedInstance] linkWithSSID:@"123" password:@"123" userId:@"123" token:@"123" callback:nil];
 
-	// 停止配网
-	[[ALGLinkSmartConfig sharedInstance] stopLink];
-	[[ALGLinkSoundConfig sharedInstance] stopLink];
+    // 停止配网
+    [[ALGLinkSmartConfig sharedInstance] stopLink];
+    [[ALGLinkSoundConfig sharedInstance] stopLink];
 ```
