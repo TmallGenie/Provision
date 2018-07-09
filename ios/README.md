@@ -25,7 +25,7 @@ cocoapods: pod 'CocoaAsyncSocket', '~> 7.4.3'
      * @param token          配网校验token（通过TOP/MTOP接口调用获取）
      * @param callback       配网回调（仅表示是否启动成功，不是设备配网结果的回调）
      */
-    - (void)linkWithSSID:(nonnull NSString *)ssid password:(nullable NSString *)passwor d userId:(nonnull NSString *)userId token:(nonnull NSString *)token callback:(nullable ALGLinkCallback)callback;
+    - (void)linkWithSSID:(nonnull NSString *)ssid password:(nullable NSString *)password userId:(nonnull NSString *)userId token:(nonnull NSString *)token callback:(nullable ALGLinkCallback)callback;
 ```
 2. 结束配网(ALGLinkSmartConfig & ALGLinkSoundConfig)
 ```
@@ -48,9 +48,9 @@ cocoapods: pod 'CocoaAsyncSocket', '~> 7.4.3'
 	#import <ALGLinkSDK/ALGLinkSDK.h>
 	....
 	// Wi-Fi配网
-	[[ALGLinkSmartConfig sharedInstance] linkWithSSID:@"123" password:@"123" userId:@"1 23" token:@"123" callback:nil];
+	[[ALGLinkSmartConfig sharedInstance] linkWithSSID:@"123" password:@"123" userId:@"123" token:@"123" callback:nil];
 	// 声波配网
-	[[ALGLinkSoundConfig sharedInstance] linkWithSSID:@"123" password:@"123" userId:@"1 23" token:@"123" callback:nil];
+	[[ALGLinkSoundConfig sharedInstance] linkWithSSID:@"123" password:@"123" userId:@"123" token:@"123" callback:nil];
 
 	// 停止配网
 	[[ALGLinkSmartConfig sharedInstance] stopLink];
