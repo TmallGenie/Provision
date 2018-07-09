@@ -33,7 +33,7 @@ cocoapods: pod 'CocoaAsyncSocket', '~> 7.4.3'
 ```
 3. 是否处于配网状态中(ALGLinkSmartConfig & ALGLinkSoundConfig)
 ```
-    /*
+	/*
      * @return YES or NO
      */
     - (BOOL)isLinking;
