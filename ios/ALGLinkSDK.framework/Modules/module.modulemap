@@ -1,0 +1,6 @@
+framework module ALGLinkSDK {
+  umbrella header "ALGLinkSDK.h"
+
+  export *
+  module * { export * }
+}
