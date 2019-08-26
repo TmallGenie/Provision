@@ -21,8 +21,8 @@ cocoapods: pod 'CocoaAsyncSocket', '~> 7.4.3'
     /*
      * @param ssid           Wi-Fi id
      * @param password       Wi-Fi 密码，不超过64位英文字符（电信版本长度控制在30英文字符内）
-     * @param userId         天猫精灵用户id（通过TOP/MTOP接口调用获取，电信版本请替换为OpenId）
-     * @param token          配网校验token（通过TOP/MTOP接口调用获取，电信版本请替换为AppKey）
+     * @param userId         天猫精灵用户id（通过TOP/MTOP接口调用获取，运营商版本请替换为 openId）
+     * @param token          配网校验token（通过TOP/MTOP接口调用获取，即 AuthCode）
      * @param callback       配网回调（仅表示是否启动成功，不是设备配网结果的回调）
      */
     - (void)linkWithSSID:(nonnull NSString *)ssid password:(nullable NSString *)password userId:(nonnull NSString *)userId token:(nonnull NSString *)token callback:(nullable ALGLinkCallback)callback;
