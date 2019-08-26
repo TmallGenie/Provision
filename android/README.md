@@ -10,8 +10,8 @@
     /*
      * @param ssid           Wi-Fi id
      * @param password       Wi-Fi 密码，不超过64位英文字符（电信版本长度控制在30英文字符内）
-     * @param userId         天猫精灵用户id（通过TOP/MTOP接口调用获取，电信版本请替换为OpenId）
-     * @param token          配网校验token（通过TOP/MTOP接口调用获取，电信版本请替换为AppKey）
+     * @param userId         天猫精灵用户id（通过TOP/MTOP接口调用获取，运营商版本请替换为 openId）
+     * @param token          配网校验token（通过TOP/MTOP接口调用获取，即 AuthCode）
      */
     startEncodeAndPlayAudio(String ssid, String password, String userId, String token)
 ```
@@ -24,8 +24,8 @@
     /*
      * @param ssid           Wi-Fi id
      * @param password       Wi-Fi 密码，不超过64位英文字符（电信版本长度控制在30英文字符内）
-     * @param userId         天猫精灵用户id（通过TOP/MTOP接口调用获取，电信版本请替换为OpenId）
-     * @param token          配网校验token（通过TOP/MTOP接口调用获取，电信版本请替换为AppKey）
+     * @param userId         天猫精灵用户id（通过TOP/MTOP接口调用获取，运营商版本请替换为 openId）
+     * @param token          配网校验token（通过TOP/MTOP接口调用获取，即 AuthCode）
      */
     startProvision(String ssid, String password, String userId, String token)
 ```
@@ -34,8 +34,8 @@
     /*
      * @param ssid           Wi-Fi id
      * @param password       Wi-Fi 密码，不超过64位英文字符（电信版本长度控制在30英文字符内）
-     * @param userId         天猫精灵用户id（通过TOP/MTOP接口调用获取，电信版本请替换为OpenId）
-     * @param token          配网校验token（通过TOP/MTOP接口调用获取，电信版本请替换为AppKey）
+     * @param userId         天猫精灵用户id（通过TOP/MTOP接口调用获取，运营商版本请替换为 openId）
+     * @param token          配网校验token（通过TOP/MTOP接口调用获取，即 AuthCode）
      */
     stopProvision（）
 ```
